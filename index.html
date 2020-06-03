@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Digit Insurance</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container" style="background-color:rgb(240, 240, 240)">
+        <section class="box">
+            <div id="middle">
+                <p class="insurance-provider">Insurance Provider</p>
+                <p><img src="https://d2h44aw7l5xdvz.cloudfront.net/assets/logos/digit-fairfax-unit.svg" class="company--logo img-fluid"></p>
+            </div>
+            <div class="container">
+                <div class="policy-details ">
+                    <div class="details-show mobile-block-100"> Customer Name <span class="text-capitalize ng-binding" id="customerName">Shiv Kumar</span> </div>
+                    <div class="details-show middle-block mobile-block-100 policy-number-mobile"> Policy Number: <span class="ng-binding" id="policyNumber">D007742103</span> </div>
+                </div>
+                <div class="policy-details ">
+                    <div class="details-show mobile-block-50"> Policy Start Date: <span class="ng-binding" id="startDate">11-Sep-2019</span> </div>
+                    <div class="details-show middle-block mobile-block-50"> Policy End Date: <span class="ng-binding" id="endDate">10-Sep-2020</span> </div>
+                    <div class="details-show last-block mobile-block-50"> Policy Status <span ng-show="scanPolicyCtrl.remainingDays > 0 &amp;&amp; scanPolicyCtrl.isPolicyActive" style="color: #1b6;" class="">Active</span> </div>
+                </div>
+            </div>
+        </section>
+        <section class="box">
+            <div class="details-block mask-copy-3">
+                <div class="customer-details pad-tp-28"> Vehicle Information </div>
+                <div class="policy-details vehicle-information-block">
+                    <div class="details-show mobile-block-100 vehicle--info-div"> Type <span class="ng-binding" id="type">Two Wheeler</span> </div>
+                    <div class="details-show middle-block mobile-block-100 vehicle--info-div"> Registration No. <span class="ng-binding" id="registrationNumber">PB08CZ5618</span> </div>
+                </div>
+                <div class="policy-details vehicle-information-block rectangle-tp-border">
+                    <div class="details-show mobile-block-100 vehicle--info-div"> Make <span class="ng-binding" id="make">BAJAJ</span> </div>
+                    <div class="details-show middle-block mobile-block-100 vehicle--info-div"> Model <span class="ng-binding" id="model">DISCOVER M</span> </div>
+                    <div class="details-show last-block mobile-block-100 vehicle--info-div"> Vehicle Sub Type <span class="ng-binding" id="vehicalSubType">DISC BRAKE</span> </div>
+                </div>
+                <div class="policy-details rectangle-tp-border">
+                    <div class="details-show mobile-block-100 vehicle--info-div"> Engine No. <span class="ng-binding" id="engineNo" ng-class="{'dash-data-display' : scanPolicyCtrl.policyDetails.engineNo == '-'}">PAZRFK99083</span> </div>
+                    <div class="details-show middle-block mobile-block-100 vehicle--info-div"> Chassis No. <span class="ng-binding" id="chassis" ng-class="{'dash-data-display' : scanPolicyCtrl.policyDetails.chassisNo == '-'}">MD2A57BZXFRK78669</span> </div>
+                </div>
+            </div>
+        </section>
+        <div>
+            <div class="secondary-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="bd-row col-sm-12 clearfix">
+                            <p class="txt-white txt-left l-float">Go Digit General Insurance Limited (formerly known as Oben General Insurance Ltd.), Address: Atlantis, 95, 4th B Cross Road, Koramangala Industrial Layout, 5th Block, Bengaluru 560095, CIN: U66010PN2016PLC167410, IRDAI Reg.
+                                No. 158. <span class="pipe">|</span><span class="footer-meta"><a href="https://www.irdai.gov.in/" target="_blank">IRDAI</a></span> <span class="pipe">|</span><span class="footer-meta"><a href="https://www.godigit.com/privacy-policy" target="_blank">Privacy Policy</a></span>                                <span class="pipe">|</span><span class="footer-meta"><a href="https://www.godigit.com/downloads" target="_self">Downloads</a></span> <span class="pipe">|</span><span class="footer-meta"><a href="https://www.godigit.com/do-not-disturb" target="_blank">Do Not Disturb (DND)</a></span>                                <span class="pipe">|</span><span class="footer-meta"><a href="https://www.godigit.com/financials" target="_blank">Public Disclosures</a></span> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../../Documents/Unnamed Site 2/js/jquery-3.2.1.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../Documents/Unnamed Site 2/js/popper.min.js"></script>
+    <script src="../../Documents/Unnamed Site 2/js/bootstrap-4.0.0.js"></script>
+</body>
+
+</html>
